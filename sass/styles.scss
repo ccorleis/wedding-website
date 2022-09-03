@@ -24,47 +24,44 @@ Global Styles
     background-color: #2f3a2c;
     color: #ffffff
 }
-  
-  /* Timeline Container */
-  .timeline {
+
+/* Timeline Container */
+.timeline {
     margin: 20px auto;
     padding: 20px;
-  }
-  
-  /* Outer Layer with the timeline border */
-  .outer {
+}
+
+/* Outer Layer with the timeline border */
+.outer {
     border-left: 2px solid #ffffff;
-  }
-  
-  /* Card container */
-  .card2 {
+}
+
+/* Card container */
+.card2 {
     position: relative;
     margin: 0 0 20px 20px;
     padding: 10px;
-    border-radius: 8px;
-    max-width: 400px;
-  }
-  
-  /* Information about the timeline */
-  .info {
+}
+
+/* Information about the timeline */
+.info {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  
-  /* Title of the card */
-  .title {
-    color: orangered;
+}
+
+/* Title of the card */
+.title {
+    color: #ffffff;
     position: relative;
-  }
-  
-  /* Timeline dot  */
-  .title::before {
+}
+
+/* Timeline dot  */
+.title::before {
     content: "";
     position: absolute;
     width: 10px;
-    height: 1px;
+    height: 10px;
     left: -36px;
     border: 3px solid #ffffff;
-  }
-  
+}
