@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 /* ==========================================================================
 Global Styles
 ========================================================================== */
+* {
+    font-family: 'Merriweather', serif;
+}
+
 #main-row {
-    margin-top: 50px;
+    margin-top: 15px;
 }
 
 #left-1 {
@@ -25,10 +31,10 @@ Global Styles
     color: #ffffff
 }
 
-/* Timeline Container */
 .timeline {
     margin: 20px auto;
     padding: 20px;
+    width: 80%;
 }
 
 /* Outer Layer with the timeline border */
@@ -39,7 +45,7 @@ Global Styles
 /* Card container */
 .card2 {
     position: relative;
-    margin: 0 0 20px 20px;
+    margin: 0 0 0px 20px;
     padding: 10px;
 }
 
@@ -54,6 +60,8 @@ Global Styles
 .title {
     color: #ffffff;
     position: relative;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Timeline dot  */
@@ -61,7 +69,8 @@ Global Styles
     content: "";
     position: absolute;
     width: 10px;
-    height: 10px;
+    height: 1px;
     left: -36px;
+    bottom: 8px;
     border: 3px solid #ffffff;
 }
