@@ -38,58 +38,59 @@
 
 
                         <div class="timeline">
-                            <div class="outer">
-                                <div class="card2">
-                                    <div class="info">
-                                        <h3 class="title">16. September 2019</h3>
+                            <div class="timeline--outer">
+                                <div class="timeline--card">
+                                    <div class="timeline--info">
+                                        <h3 class="timeline--title">16. September 2019</h3>
                                         <p>Wir sehen uns das erste Mal - bei Otto im Think Tank.</p>
                                     </div>
                                 </div>
-                                <div class="card2">
-                                    <div class="info">
-                                        <h3 class="title">07. März 2020</h3>
+                                <div class="timeline--card">
+                                    <div class="timeline--info">
+                                        <h3 class="timeline--title">07. März 2020</h3>
                                         <p>Die letzte Kopfhörerparty vor Corona. Unsere erste Party zusammen.</p>
                                     </div>
                                 </div>
-                                <div class="card2">
-                                    <div class="info">
-                                        <h3 class="title">18. Juni 2020</h3>
+                                <div class="timeline--card">
+                                    <div class="timeline--info">
+                                        <h3 class="timeline--title">18. Juni 2020</h3>
                                         <p>Zusammen mit Eva nehmen wir am remote Pub-Quiz teil.</p>
                                     </div>
                                 </div>
-                                <div class="card2">
-                                    <div class="info">
-                                        <h3 class="title">24. August 2020</h3>
+                                <div class="timeline--card">
+                                    <div class="timeline--info">
+                                        <h3 class="timeline--title">24. August 2020</h3>
                                         <p>Unser erstes Date - wir schauen uns im Savoy Frankenstein an.</p>
                                     </div>
                                 </div>
-                                <div class="card2">
-                                    <div class="info">
-                                        <h3 class="title">25. Juni 2021</h3>
+                                <div class="timeline--card">
+                                    <div class="timeline--info">
+                                        <h3 class="timeline--title">25. Juni 2021</h3>
                                         <p>Wir ziehen in unsere erste offizielle gemeinsame Wohnung.</p>
                                     </div>
                                 </div>
-                                <div class="card2">
-                                    <div class="info">
-                                        <h3 class="title">25. November 2021</h3>
-                                        <p>Wir fahren das erste mal zusammen in den Urlaub. Ein langes Wochenende in Heidelberg.</p>
+                                <div class="timeline--card">
+                                    <div class="timeline--info">
+                                        <h3 class="timeline--title">25. November 2021</h3>
+                                        <p>Wir fahren das erste mal zusammen in den Urlaub. Ein langes Wochenende in
+                                            Heidelberg.</p>
                                     </div>
                                 </div>
-                                <div class="card2">
-                                    <div class="info">
-                                        <h3 class="title">29. Februar 2022</h3>
+                                <div class="timeline--card">
+                                    <div class="timeline--info">
+                                        <h3 class="timeline--title">29. Februar 2022</h3>
                                         <p>Er hat "Ja" gesagt!</p>
                                     </div>
                                 </div>
-                                <div class="card2">
-                                    <div class="info">
-                                        <h3 class="title">03. September 2022</h3>
+                                <div class="timeline--card">
+                                    <div class="timeline--info">
+                                        <h3 class="timeline--title">03. September 2022</h3>
                                         <p>Wir bauen gemeinsam unsere erste Website.</p>
                                     </div>
                                 </div>
-                                <div class="card2">
-                                    <div class="info">
-                                        <h3 class="title">19. Mai 2023</h3>
+                                <div class="timeline--card">
+                                    <div class="timeline--info">
+                                        <h3 class="timeline--title">19. Mai 2023</h3>
                                         <p>Wir heiraten im Stavenhagenhaus.</p>
                                     </div>
                                 </div>
@@ -112,7 +113,45 @@
             <div class="col-sm-6 col-md-6 py-2">
                 <div class="card">
                     <div class="card-body" id="dark-brown">
-                        <img src="img/rsvp.svg" width=100% height="auto"></br></br></br></br>
+                        <img src="img/rsvp.svg" width=100% height="auto">
+
+                        <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-envelope"></i>
+                                        <input type="email" name="email" class="" placeholder="Your email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-user"></i>
+                                        <input name="name" class="" placeholder="Your name" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-users"></i>
+                                        <input type="number" name="extras" class="" min="0" max="4" placeholder="Husband/Wife or kids" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-input-group">
+                                        <i class="fa fa-key"></i>
+                                        <input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" id="alert-wrapper"></div>
+                            </div>
+                            <button class="btn-fill rsvp-btn">
+                                Yes, that's me!
+                            </button>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
@@ -120,7 +159,7 @@
             <div class="col-sm-6 col-md-6 py-2">
                 <div class="card">
                     <div class="card-body" id="light-brown">
-                        FAQ</br></br></br></br></br></br>
+                        <img src="img/faq.svg" width=100% height="auto"></br></br></br></br></br></br>
                     </div>
                 </div>
             </div>
