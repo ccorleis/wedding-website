@@ -6,7 +6,6 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
-        is_valid_invitation_id(data);
         $.post(url, data)
                 .done(function (data) {
                     if (data.result === 'error') {
