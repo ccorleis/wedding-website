@@ -26,14 +26,55 @@ Global Styles
     color: #ffffff
 }
 
-iframe {
-    flex-grow: 1;
-    border: none;
-    margin: 0;
-    padding: 0;
+/* RSVP */
+.form-input-group {
+    margin-top: 10px;
+    
 }
 
+.rsvp-btn {
+    margin-top: 10px;
+}
 
+input {
+    width: 100%;
+    max-width: 100%;
+    background-color: #2f3a2c;
+    color: #ffffff
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    background-color: #2f3a2c;
+    color: #ffffff
+}
+
+input::-webkit-outer-spin-button, /* Chrome, Safari, Edge, Opera */
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] { /* Firefox */
+  -moz-appearance: textfield;
+}
+
+button {
+    background-color: #ffffff5e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+button:hover {
+    background-color: #ffffff86
+}
+
+/* Timeline */
 .timeline {
     margin: 20px auto;
     padding: 20px;

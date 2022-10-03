@@ -136,30 +136,24 @@
 
                         <form id="rsvp-form" class="rsvp-form" action="" method="POST">
                             <div class="row">
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-12 col-sm-12">
                                     <div class="form-input-group">
-                                        <i class="fa fa-envelope"></i>
-                                        <input type="email" name="email" class="" placeholder="Your email" >
+                                        <i class="fa fa-key"></i>
+                                        <input type="number" name="invite_code" id="invite_code" class="" placeholder="Einladungscode" >
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-12 col-sm-12">
                                     <div class="form-input-group">
                                         <i class="fa fa-user"></i>
-                                        <input name="name" class="" placeholder="Your name" >
+                                        <input name="name" class="" placeholder="Dein Name" >
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6 col-sm-6">
+                                <div class="col-md-12 col-sm-12">
                                     <div class="form-input-group">
                                         <i class="fa fa-users"></i>
-                                        <input type="number" name="extras" class="" min="0" max="4" placeholder="Husband/Wife or kids" >
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-input-group">
-                                        <i class="fa fa-key"></i>
-                                        <input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" >
+                                        <textarea name="extras" cols="40" rows="5" placeholder="Essenswünsche (bspw. vegan, glutenfrei, laktosefrei)"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -167,7 +161,7 @@
                                 <div class="col-md-12" id="alert-wrapper"></div>
                             </div>
                             <button class="btn-fill rsvp-btn">
-                                Yes, that's me!
+                                Bin dabei
                             </button>
                         </form>
                         
@@ -231,6 +225,8 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
+    <!-- sweetalert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/scripts.js"></script>
 </body>
 
