@@ -14,6 +14,7 @@ $(document).ready(function () {
                             icon: 'error',
                             title: 'Error',
                             showConfirmButton: false,
+                            allowOutsideClick: false,
                             timer: 1500
                           })
                     } else {
