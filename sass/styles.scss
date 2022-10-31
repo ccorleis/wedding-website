@@ -67,6 +67,22 @@ Cards
         color: #ffffff;
     }
 
+    &--input::-webkit-input-placeholder {
+        color:#eecaae;
+    }
+    
+    &--input::-moz-placeholder {
+        color:#eecaae;
+    }
+    
+    &--input::-ms-placeholder {
+        color:#eecaae;
+    }
+    
+    &--input::placeholder {
+        color:#eecaae;
+    }
+
     &--input[type='radio']:after {
         width: 17px;
         height: 17px;
@@ -144,6 +160,18 @@ Cards
 
     &--input[type=number] { /* Firefox */
       -moz-appearance: textfield;
+    }
+
+    &--input::-webkit-input-placeholder {
+        color:#eecaae;
+    }
+    
+    &--input::-ms-placeholder {
+        color:#eecaae;
+    }
+    
+    &--input::placeholder {
+        color:#eecaae;
     }
 
     &--button {
