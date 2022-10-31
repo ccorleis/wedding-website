@@ -20,7 +20,7 @@ $(document).ready(function () {
                         $('.rsvp--status').text("Deine Daten wurden übertragen.");
                         setTimeout(function(){
                             $('.rsvp--status').html("</br>");
-                        }, 2000);
+                        }, 4000);
                     }
                 })
                 .fail(function (data) {
@@ -61,4 +61,11 @@ function is_valid_invitation_id(data)
         .done(function(data) {
             return data.isValid
           });
+}
+
+window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#❤';
+        window.location.reload();
+    }
 }

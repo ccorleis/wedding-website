@@ -19,10 +19,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#6a7b70">
+    <link rel="stylesheet" href="css/styles.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
@@ -33,7 +33,10 @@
             <div class="col-sm-6 col-md-6 py-2">
                 <div class="card">
                     <div class="card-body" id="green">
-                        <img src="img/christoph-and-marit-white.svg">
+                        <img src="img/christoph-and-marit-white.svg" width=100% height="auto">
+                        <p>
+                            <center><b>was bisher geschah</b></center>
+                        </p>
                         <div class="timeline">
                             <div class="timeline--outer">
                                 <div class="timeline--card">
@@ -57,7 +60,7 @@
                                 <div class="timeline--card">
                                     <div class="timeline--info">
                                         <h3 class="timeline--title">25. Juni 2021</h3>
-                                        <p>Wir ziehen in unsere erste offizielle gemeinsame Wohnung.</p>
+                                        <p>Wir ziehen nach Barmbek, unsere erste offizielle gemeinsame Wohnung.</p>
                                     </div>
                                 </div>
                                 <div class="timeline--card">
@@ -76,14 +79,8 @@
                                 </div>
                                 <div class="timeline--card">
                                     <div class="timeline--info">
-                                        <h3 class="timeline--title">03. September 2022</h3>
-                                        <p>Wir bauen gemeinsam unsere erste Website.</p>
-                                    </div>
-                                </div>
-                                <div class="timeline--card">
-                                    <div class="timeline--info">
-                                        <h3 class="timeline--title">19. Mai 2023</h3>
-                                        <p>Wir heiraten im Stavenhagenhaus.</p>
+                                        <h3 class="timeline--title">31. Oktober 2022</h3>
+                                        <p>Unsere erste Website geht live.</p>
                                     </div>
                                 </div>
                             </div>
@@ -91,36 +88,69 @@
                     </div>
                 </div>
             </div>
-            <!--FAQ-->
+            <!--RSVP Card-->
             <div class="col-sm-6 col-md-6 py-2">
                 <div class="card">
-                    <div class="card-body" id="dark-brown" style="font-size:small">
-                        <img src="img/faq.svg" width=60% height="auto"></br></br>
-                        <p><b>Was soll ich anziehen?</b></p>
-                        <p align="justify">Wir wollen, dass du dich wohl fühlst! Also was immer dazu beiträgt, im
-                            Zweifelsfall 'Smart Casual'.</p>
-                        <p><b>Wo kann ich parken?</b></p>
-                        <p align="justify">Das Stavenhagenhaus liegt in einem Wohngebiet wo man mit etwas Glück einen
-                            Parkplatz bekommt. Eigene Parkplätze gibt es dort nicht. Wenn Möglich bietet es sich an mit
-                            den öffentlichen Verkehrsmitteln zu fahren, die Haltestelle 'Warnckesweg' ist direkt um die
-                            Ecke.</p>
-                        <p><b>Wie lange geht das Ganze?</b></p>
-                        <p align="justify">Bis wir Anfangen zu frieren oder der Kuchen aufgegessen ist :)
-                            Oder anders: Nach dem Kuchen essen gibt es keinen weiteren Programmpunkt. Wer mag kann im
-                            Anschluss noch einen Spaziergang im Eppendorfer Moor machen. Das ist direkt um die Ecke!</p>
-                        <p><b>Soll ich etwas mitbringen?</b></p>
-                        <p align="justify">Gute Laune und zum Wetter passende Kleidung. Für den Rest ist gesorgt.</p>
-                        <p><b>Und Geschenke?</b></p>
-                        <p align="justify">Wir freuen uns mit euch den Tag zu verbringen. Wenn ihr uns darüber hinaus
-                            eine Freude machen wollt, dann gerne mit einem Zuschuss zu den Flitterwochen.</p>
-                        <p><b>Noch Fragen ungeklärt? Dann schreibt uns einfach!</b></p>
+                    <div class="card-body" id="light-brown">
+                        <img src="img/rsvp.svg" width=100% height="auto">
+                        <p style="font-size:small" align="justify">Nutzt den Einladungscode von der Einladungskarte um
+                            euch (einzeln) einzutragen und gebt uns unten mit, ob ihr Essenswünsche/Allergien habt.</p>
+                        <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="rsvp--form-input-group">
+                                        <i class="fa fa-key"></i>
+                                        <input class="rsvp--input" type="number" name="invite_code"
+                                            placeholder="Einladungscode">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="rsvp--form-input-group">
+                                        <i class="fa fa-user"></i>
+                                        <input class="rsvp--input" name="name" placeholder="Dein Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <div class="rsvp--form-input-group">
+                                        <i class="fa fa-users"></i>
+                                        <textarea class="rsvp--input" name="extras" cols="40" rows="2" style="overflow:auto;resize:none"
+                                            placeholder="Essenswünsche (bspw. vegan, glutenfrei, laktosefrei)"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-check-inline">
+                                    <label class="rsvp--label form-check-label">
+                                        <input type="radio" id="attend" name="attendance"
+                                            class="rsvp--input form-check-input" value="dabei"> Bin dabei!
+                                    </label>
+                                    <label class="rsvp--label form-check-label">
+                                        <input type="radio" id="donotattend" name="attendance"
+                                            class="rsvp--input form-check-input" value="nicht dabei"> Bin leider nicht
+                                        dabei.
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-lg-4">
+                                    <button class="rsvp--button btn-fill">
+                                        Senden
+                                    </button>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-lg-8">
+                                    <p class="rsvp--status"></br></p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
             <!--Das erwartet euch Card-->
             <div class="col-sm-6 col-md-6 py-2">
                 <div class="card">
-                    <div class="card-body" id="light-brown">
+                    <div class="card-body" id="green">
                         <img src="img/das-erwartet-euch.svg" width=100% height="auto">
                         <p>
                             <center><b>am 19.05.2022 in Groß Borstel</b></center>
@@ -146,64 +176,30 @@
                     </div>
                 </div>
             </div>
-            <!--RSVP Card-->
+            <!--FAQ-->
             <div class="col-sm-6 col-md-6 py-2">
                 <div class="card">
-                    <div class="card-body" id="green">
-                        <img src="img/rsvp.svg" width=100% height="auto">
-                        <p style="font-size:small" align="justify">Nutzt den Einladungscode von der Einladungskarte um
-                            euch (einzeln) einzutragen und gebt uns unten mit, ob ihr Essenswünsche/Allergien habt.</p>
-                        <form id="rsvp-form" class="rsvp-form" action="" method="POST">
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="rsvp--form-input-group">
-                                        <i class="fa fa-key"></i>
-                                        <input class="rsvp--input" type="number" name="invite_code"
-                                            placeholder="Einladungscode">
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="rsvp--form-input-group">
-                                        <i class="fa fa-user"></i>
-                                        <input class="rsvp--input" name="name" placeholder="Dein Name">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 col-sm-12">
-                                    <div class="rsvp--form-input-group">
-                                        <i class="fa fa-users"></i>
-                                        <textarea class="rsvp--input" name="extras" cols="40" rows="2"
-                                            placeholder="Essenswünsche (bspw. vegan, glutenfrei, laktosefrei)"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-check-inline">
-                                    <label class="rsvp--label form-check-label">
-                                        <input type="radio" id="attend" name="attendance"
-                                            class="rsvp--input form-check-input" value="dabei"> Bin dabei!
-                                    </label>
-                                    <label class="rsvp--label form-check-label">
-                                        <input type="radio" id="donotattend" name="attendance"
-                                            class="rsvp--input form-check-input" value="nicht dabei"> Bin leider nicht
-                                        dabei.
-                                    </label>
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-4 col-sm-4">
-                                    <button class="rsvp--button btn-fill">
-                                        Senden
-                                    </button>
-                                </div>
-                                <div class="col-md-8 col-sm-8">
-                                    <p class="rsvp--status"></br></p>
-                                </div>
-                            </div>
-                        </form>
-
+                    <div class="card-body" id="dark-brown" style="font-size:small">
+                        <img src="img/faq.svg" width=60% height="auto"></br></br>
+                        <p><b>Was soll ich anziehen?</b></p>
+                        <p align="justify">Wir wollen, dass du dich wohl fühlst! Also was immer dazu beiträgt, im
+                            Zweifelsfall 'Smart Casual'.</p>
+                        <p><b>Wo kann ich parken?</b></p>
+                        <p align="justify">Das Stavenhagenhaus liegt in einem Wohngebiet, in dem man mit etwas Glück
+                            einen
+                            Parkplatz bekommt. Eigene Parkplätze gibt es dort nicht. Wenn möglich bietet es sich an, mit
+                            den öffentlichen Verkehrsmitteln zu fahren, die Haltestelle 'Warnckesweg' ist wenige Meter
+                            entfernt.</p>
+                        <p><b>Wie lange geht das Ganze?</b></p>
+                        <p align="justify">Bis wir Anfangen zu frieren oder der Kuchen aufgegessen ist :)
+                            Oder anders: Nach dem Kuchen essen gibt es keinen weiteren Programmpunkt. Wer mag kann im
+                            Anschluss noch einen Spaziergang im Eppendorfer Moor machen. Das ist direkt um die Ecke!</p>
+                        <p><b>Soll ich etwas mitbringen?</b></p>
+                        <p align="justify">Gute Laune und zum Wetter passende Kleidung. Für den Rest ist gesorgt.</p>
+                        <p><b>Und Geschenke?</b></p>
+                        <p align="justify">Wir freuen uns mit euch den Tag zu verbringen. Wenn ihr uns darüber hinaus
+                            eine Freude machen wollt, dann gerne mit einem Zuschuss zu den Flitterwochen.</p>
+                        <p><b>Noch Fragen ungeklärt? Dann schreibt uns einfach!</b></p>
                     </div>
                 </div>
             </div>
@@ -211,6 +207,9 @@
             <div class="col-sm-6 col-md-6 py-2">
                 <div class="card">
                     <div class="card-body" id="light-brown">
+                        <p style="font-size:small" align="justify">Nach der Hochzeit findet ihr hier Fotos und wir
+                            freuen uns, wenn ihr auch eure Fotos hochladet.
+                            Den Link erhaltet ihr, wenn ihr euren Einladungscode eingebt.</p>
                         <form id="drive-form" class="drive-form" action="" method="GET">
                             <div class="row">
                                 <div class="col-md-12 col-sm-12">
@@ -256,7 +255,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
