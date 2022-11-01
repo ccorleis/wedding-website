@@ -36,6 +36,10 @@ Cards
     font-size: xx-small;
 }
 
+*:focus {
+    outline: none;
+}
+
 /* RSVP */
 .rsvp {
 
@@ -84,11 +88,11 @@ Cards
     }
 
     &--input[type='radio']:after {
-        width: 18.5px;
-        height: 18.5px;
-        border-radius: 18.5px;
-        top: -1.5px;
-        left: -1.5px;
+        width: 17px;
+        height: 17px;
+        border-radius: 17px;
+        top: -2px;
+        left: -1px;
         position: relative;
         background-color: #d1d3d1;
         content: '';
@@ -98,11 +102,11 @@ Cards
     }
 
     &--input[type='radio']:checked:after {
-        width: 18.5px;
-        height: 18.5px;
-        border-radius: 18.5px;
-        top: -1.5px;
-        left: -1.5px;
+        width: 17px;
+        height: 17px;
+        border-radius: 17px;
+        top: -2px;
+        left: -1px;
         position: relative;
         background-color: #ab8b72;
         content: '';
