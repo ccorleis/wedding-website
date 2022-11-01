@@ -84,11 +84,11 @@ Cards
     }
 
     &--input[type='radio']:after {
-        width: 17px;
-        height: 17px;
-        border-radius: 17px;
-        top: -2px;
-        left: -1px;
+        width: 18px;
+        height: 18px;
+        border-radius: 18px;
+        top: -1.5px;
+        left: -2px;
         position: relative;
         background-color: #d1d3d1;
         content: '';
@@ -98,11 +98,11 @@ Cards
     }
 
     &--input[type='radio']:checked:after {
-        width: 17px;
-        height: 17px;
-        border-radius: 17px;
-        top: -2px;
-        left: -1px;
+        width: 18px;
+        height: 18px;
+        border-radius: 18px;
+        top: -1.5px;
+        left: -2px;
         position: relative;
         background-color: #ab8b72;
         content: '';
