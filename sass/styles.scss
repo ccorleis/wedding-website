@@ -52,6 +52,11 @@ Cards
         max-width: 100%;
         background-color: #ab8b72;
         color: #ffffff;
+
+        &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+        }
     }
 
     &--input::-webkit-outer-spin-button, /* Chrome, Safari, Edge, Opera */
