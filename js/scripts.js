@@ -61,11 +61,10 @@ function is_valid_invitation_id(data)
         .done(function(data) {
             return data.isValid
           });
-}
+} 
 
-window.onload = function() {
-    if(!window.location.hash) {
-        window.location = window.location + '#loaded';
-        window.location.reload();
-    }
-}
+var $grid = $('#main-row').imagesLoaded( function() {
+    $grid.masonry({
+        "percentPosition": true
+    });
+});
