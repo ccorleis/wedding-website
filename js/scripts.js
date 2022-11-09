@@ -33,7 +33,7 @@ $(document).ready(function () {
 
     $('#drive-form').on('submit', function (e) {
         e.preventDefault();
-        if (window.location.href.indexOf("trauung") > -1) {
+        if (window.location.href.indexOf("standesamt") > -1) {
             var tag = "trauung"
         }
         else if (window.location.href.indexOf("party") > -1) {
