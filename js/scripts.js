@@ -1,4 +1,4 @@
-var url = 'https://script.google.com/macros/s/AKfycbwQDZnJqC5LgB26nPj5jGsC7wR79MPkpJC_gNMsap18RNbJUxPizjWcF9J5zBxZdE_l/exec';
+var url = 'https://script.google.com/macros/s/AKfycbwHGbRaykdqehcxCMiSr2c2FGQIVLEhuebuRyNQdNoSRusQ-1CeUB2yYHMprOVmsCCX/exec';
 var messageCodeCheck = "Dein Code wird überprüft.";
 var messageWrongInvitationCode = "Code leider nicht korrekt. 🙁";
 var messageServerError = "Leider ist ein Fehler aufgetreten. 🙁";
@@ -33,7 +33,13 @@ $(document).ready(function () {
 
     $('#drive-form').on('submit', function (e) {
         e.preventDefault();
-        var data = $(this).serialize();
+        if (window.location.href.indexOf("trauung") > -1) {
+            var tag = "trauung"
+        }
+        else if (window.location.href.indexOf("party") > -1) {
+            var tag = "party"
+        }
+        var data = $(this).serialize() + '&tag=' + tag;
         $('.google-drive--status').text(messageCodeCheck)
         $.get(url, data)
                 .done(function (data) {
